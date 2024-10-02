@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+}
+
+/* Position the "No" button absolutely within body */
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    /* Smooth movement */
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    /* Smooth movement */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text {
+    font-family: 'Nunito';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-button {
+    background: linear-gradient(45deg, #ff69b4, #ff1493); /* Gradasi warna pink */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: moveButton 2s infinite ease-in-out; /* Animasi gerakan */
+    margin-top: 10px;
+  }
+  
+  @keyframes moveButton {
+    0% {
+      transform: translateX(0); /* Mulai dari posisi normal */
+    }
+    50% {
+      transform: translateX(10px); /* Bergerak ke kanan */
+    }
+    100% {
+      transform: translateX(0); /* Kembali ke posisi awal */
+    }
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.1); /* Perbesar tombol saat di-hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .whatsapp-button:active {
+    transform: scale(1.05); /* Sedikit perkecil saat tombol ditekan */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+   
